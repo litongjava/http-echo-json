@@ -1,0 +1,1 @@
+java -Xverify:none -cp config;lib\*;static com.litongjava.http.echo.json.BootApplication

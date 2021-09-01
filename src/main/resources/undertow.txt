@@ -1,0 +1,3 @@
+#自动热加载
+undertow.devMode=true
+undertow.port=8000
