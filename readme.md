@@ -111,21 +111,43 @@ com.litongjava.http.echo.json.BootApplication
 ![](media/951245cb63749112a9e944d12dc1b682.png)
 
 bootstrap
-
-| \#!/usr/bin/env bash ./socat.sh & java -Xverify:none -cp config:lib/\*:static com.litongjava.http.echo.json.BootApplication |
-|-----------------------------------------------------------------------------------------------------------------------------|
+```
+#!/usr/bin/env bash
+./socat.sh &
+java -Xverify:none -cp config:lib/*:static com.litongjava.http.echo.json.BootApplication
+```
 
 socat.sh
+```
+#!/usr/bin/env bash
+while ! &>/dev/null </dev/tcp/127.0.0.1/8000; do
+    sleep 0.01;
+done
+socat TCP4-LISTEN:9000,reuseaddr,fork TCP4:127.0.0.1:8000
+```
 
-| \#!/usr/bin/env bash while ! &\>/dev/null \</dev/tcp/127.0.0.1/8000; do  sleep 0.01; done socat TCP4-LISTEN:9000,reuseaddr,fork TCP4:127.0.0.1:8000 |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 
 猜测socat文件应该没有什么用
 
 template.yml
+```
+ROSTemplateFormatVersion: '2015-09-01'
+Transform: 'Aliyun::Serverless-2018-04-03'
+Resources:
+  demo:
+    Type: 'Aliyun::Serverless::Service'
+    Properties:
+      Description: This is demo service
+      NasConfig: Auto
+    func:
+      Type: 'Aliyun::Serverless::Function'
+      Properties:
+        Handler: index.handler
+        Runtime: custom
+        CodeUri: ./
+```
 
-| ROSTemplateFormatVersion: '2015-09-01' Transform: 'Aliyun::Serverless-2018-04-03' Resources:  demo:  Type: 'Aliyun::Serverless::Service'  Properties:  Description: This is demo service  NasConfig: Auto  func:  Type: 'Aliyun::Serverless::Function'  Properties:  Handler: index.handler  Runtime: custom  CodeUri: ./ |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
 
 #### 查看域名
 
