@@ -1,3 +1,6 @@
 #自动热加载
 undertow.devMode=true
 undertow.port=8000
+#undertow.port=80
+undertow.contextPath=/http-echo-json
+undertow.resourcePath = classpath:http-echo-json

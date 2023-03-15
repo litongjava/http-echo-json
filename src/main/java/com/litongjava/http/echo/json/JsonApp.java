@@ -8,8 +8,7 @@ import com.litongjava.http.echo.json.config.AppConfig;
  * @version 1.0
  * @desc
  */
-
-public class BootApplication {
+public class JsonApp {
   public static void main(String[] args) {
     UndertowServer.start(AppConfig.class);
   }
