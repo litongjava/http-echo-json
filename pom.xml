@@ -13,11 +13,21 @@
   <build>
     <plugins>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.6.1</version>
+        <configuration>
+          <!-- java8 保留参数名编译参数 -->
+          <compilerArgument>-parameters</compilerArgument>
+        </configuration>
+      </plugin>
+
+      <plugin>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>2.7.4</version>
         <configuration>
-          <mainClass>demo.DemoApp</mainClass>
+          <mainClass>com.litongjava.http.echo.json.JsonApp</mainClass>
         </configuration>
         <!-- 设置执行目标 -->
         <executions>
