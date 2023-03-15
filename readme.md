@@ -6,60 +6,10 @@
 
 api.flickr.com 是一个被墙网站,在国内搭建一个,提供必要的json服务
 
-#### http 接口
 
-##### /
-
-请求
-
-| key      | desc     |
-|----------|----------|
-| 请求接口 | /        |
-| 请求方式 | get/port |
-| 请求数据 | 无       |
-
-响应
-
-| this is index |
-|---------------|
-
-##### json/getUser
-
-请求
-
-| key      | desc          |
-|----------|---------------|
-| 请求接口 | /json/getUser |
-| 请求方式 | get/port      |
-| 请求数据 | 无            |
-
-响应
-
-| { "address": "California", "name": "ping" } |
-|---------------------------------------------|
-
-##### json/loadUser
-
-请求
-
-| key      | desc           |
-|----------|----------------|
-| 请求接口 | /json/loadUser |
-| 请求方式 | get/port       |
-| 请求数据 | 无             |
-
-响应
-
-| { "address": "California", "name": "ping" } |
-|---------------------------------------------|
-
-#### 请求示例
-
-http://60418942-1709155087484149.test.functioncompute.com/
-
-http://60418942-1709155087484149.test.functioncompute.com/json/getUser
-
-http://60418942-1709155087484149.test.functioncompute.com/json/loadUser
+#### 接口文档
+使用ApiFox  
+https://www.apifox.cn/apidoc/shared-2daf86e0-de95-4ffb-891d-85be0d756d6c
 
 ### 部署到阿里云函数计算
 
