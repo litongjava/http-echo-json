@@ -11,6 +11,11 @@ api.flickr.com 是一个被墙网站,在国内搭建一个,提供必要的json�
 使用ApiFox  
 https://www.apifox.cn/apidoc/shared-2daf86e0-de95-4ffb-891d-85be0d756d6c
 
+#### 启动项目
+使用mvn和spring-boot插件启动即可
+```
+mvn clean package -DskipTests spring-boot:run
+```
 ### 部署到阿里云函数计算
 
 #### 创建web应用
