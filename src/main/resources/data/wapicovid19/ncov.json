@@ -1,0 +1,86 @@
+{
+  "status": 200,
+  "msg": "success",
+  "newList": [{
+    "news":[
+      {
+        "id":141793,
+        "pubDate":1625531587000,
+        "pubDateStr":"16小时前",
+        "title":"全国|新增确诊23例,其中本土3例",
+        "summary":"7月5日0时-24时,31个省(自治区,直辖市)和新疆建设兵团报告新增确诊病例23例,其中境外输入病例20例,(云南8例,上海4例,广东3例,重庆3例,辽宁1例,福建1例,),本土病例3例",
+        "infoSource":"央视新闻App",
+        "sourceUrl":"",
+        "provinceId":"",
+        "articleId":46466,
+        "category":1,
+        "jumpUrl":""
+      },{
+        "id":141780,
+        "pubDate":1625527138000,
+        "pubDateStr":"17小时前",
+        "title":"云南|其中新增确诊11例,其中本土3例",
+        "summary":"7月5日0时-24时,云南新增本土确诊病例3例,无症状感染者2例,新增境外输入确诊病例2例.无症状感染者解除医学隔离观察1例(境外输入),截止7月5日24时,云南",
+        "infoSource":"央视新闻App",
+        "sourceUrl":"http://xxx",
+        "provinceId":"",
+        "articleId":46571,
+        "category":1,
+        "jumpUrl":""
+      }
+    ],
+    "desc": {
+      "id":1,
+      "createTime":1579537899000,
+      "modifyTime":1625568205000,
+      "summary":"",
+      "deleted":false,
+      "countRemark":"",
+      "currentConfirmedCount":3742,
+      "confirmedCount":118979,
+      "suspectedCount":6694,
+      "curedCount":109683,
+      "deadCount":5554,
+      "seriousCount":446,
+      "suspectedIncr":20,
+      "currentConfirmedIncr":-259,
+      "confirmedIncr":83,
+      "curedIncr":323,
+      "deadIncr":19,
+      "seriousIncr":3,
+      "remark1": "易感人群:人群普遍易感, 老年人即有基础疾病者感染后病毒较重,儿童及幼儿也有发病",
+      "remark2": "潜伏期:一般为3-7天,最长不超过14天,潜伏期内可能存在传染性,其中无症状病例传染性非常罕见",
+      "remark3": "宿主:野生动物,可能为中华菊头蝠",
+      "remark4":"",
+      "remark5":"",
+      "note1": "病毒: SARS-Cov-2,其导致疾病命名COVID-19",
+      "note2": "传染源:新冠肺炎的患者.无症状感染者也可能成为传播源",
+      "note3": "传播途径:经呼吸道飞沫,接触传播是主要的传播途径.气溶胶传播和消化道等传染途径尚待明确",
+      "generalRemark":"",
+      "abroadRemark":"",
+      "foreignStatistics":{
+        "currentConfirmedCount":29810628,
+        "confirmedCount":184855896,
+        "suspectedCount":4,
+        "curedCount":151032822,
+        "deadCount":4012446,
+        "suspectedIncr":0,
+        "currentConfirmedIncr":1015,
+        "confirmedIncr":379565,
+        "curedIncr":371582,
+        "deadIncr":6968
+      },
+      "globalStatistics":{
+        "currentConfirmedCount":29814370,
+        "confirmedCount":184974875,
+        "curedCount":151142505,
+        "deadCount":4018000,
+        "currentConfirmedIncr":756,
+        "confirmedIncr":379648,
+        "curedIncr":371905
+      }
+      
+      
+    }
+  }]
+}

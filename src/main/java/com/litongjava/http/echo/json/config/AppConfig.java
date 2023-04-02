@@ -6,6 +6,7 @@ import com.jfinal.config.Interceptors;
 import com.jfinal.config.JFinalConfig;
 import com.jfinal.config.Plugins;
 import com.jfinal.config.Routes;
+import com.jfinal.ext.cors.CORSInterceptor;
 import com.jfinal.template.Engine;
 import com.litongjava.http.echo.json.utils.PropKitUtils;
 
@@ -33,6 +34,7 @@ public class AppConfig extends JFinalConfig {
   }
 
   public void configInterceptor(Interceptors me) {
+    me.add(new CORSInterceptor());
   }
 
   public void configHandler(Handlers me) {

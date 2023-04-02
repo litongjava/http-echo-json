@@ -2,6 +2,7 @@ package com.litongjava.http.echo.json.controller;
 
 import com.jfinal.core.Controller;
 import com.jfinal.core.Path;
+import com.jfinal.ext.cors.EnableCORS;
 import com.litongjava.http.echo.json.model.User;
 
 /**
@@ -10,6 +11,7 @@ import com.litongjava.http.echo.json.model.User;
  * @desc
  */
 @Path("json")
+@EnableCORS
 public class JsonController extends Controller {
 
   public void getUser() {

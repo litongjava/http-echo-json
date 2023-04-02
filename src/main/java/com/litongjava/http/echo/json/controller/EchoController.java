@@ -9,11 +9,13 @@ import javax.servlet.http.Cookie;
 
 import com.jfinal.core.Controller;
 import com.jfinal.core.Path;
+import com.jfinal.ext.cors.EnableCORS;
 
 import lombok.extern.slf4j.Slf4j;
 
 @Path("echo")
 @Slf4j
+@EnableCORS
 public class EchoController extends Controller {
 
   public void index() {

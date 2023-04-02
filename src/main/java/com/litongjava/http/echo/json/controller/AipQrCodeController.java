@@ -2,8 +2,10 @@ package com.litongjava.http.echo.json.controller;
 
 import com.jfinal.core.Controller;
 import com.jfinal.core.Path;
+import com.jfinal.ext.cors.EnableCORS;
 
 @Path("api/qrcode")
+@EnableCORS
 public class AipQrCodeController extends Controller {
 
   public void index() {

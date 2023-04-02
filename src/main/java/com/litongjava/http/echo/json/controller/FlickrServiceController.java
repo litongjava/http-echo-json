@@ -8,6 +8,7 @@ import com.jfinal.aop.Inject;
 import com.jfinal.core.Controller;
 import com.jfinal.core.Path;
 import com.jfinal.core.paragetter.Para;
+import com.jfinal.ext.cors.EnableCORS;
 import com.litongjava.http.echo.json.model.Flickr;
 import com.litongjava.http.echo.json.model.Photo;
 import com.litongjava.http.echo.json.services.FlickrService;
@@ -16,6 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 
 @Path("services/rest")
 @Slf4j
+@EnableCORS
 public class FlickrServiceController extends Controller {
   
   @Inject

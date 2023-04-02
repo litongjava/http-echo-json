@@ -2,10 +2,12 @@ package com.litongjava.http.echo.json.controller;
 
 import com.jfinal.core.Controller;
 import com.jfinal.core.Path;
+import com.jfinal.ext.cors.EnableCORS;
 import com.jfinal.kit.Kv;
 import com.jfinal.upload.UploadFile;
 
 @Path("api/file")
+@EnableCORS
 public class ApiFileController extends Controller{
 
   public void upload() {
